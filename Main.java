@@ -27,7 +27,7 @@ public class Main {
         System.out.println("Загальна вартість: " + necklace.calculateTotalPrice() + "$");
 
         // Демонстрація сортування
-        System.out.println("\nСортування за ціною");
+        System.out.println("\nСортування за ціною:");
         necklace.sortByValue();
         necklace.printInfo();
         // Визначаємо змінні для діапазону прозорості
