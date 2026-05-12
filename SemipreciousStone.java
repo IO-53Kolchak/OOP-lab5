@@ -2,8 +2,7 @@ package org.example;
 
 /**
  * Абстрактний клас, що представляє категорію напівкоштовного каміння.
- * Використовується в ієрархії для групування каменів середньої цінності (наприклад, Бурштин).
- * Забезпечує логічний поділ колекції згідно з технічним завданням.
+ * групування каменів середньої цінності (наприклад, Бурштин).
  */
 public abstract class SemipreciousStone extends GemStone {
     public SemipreciousStone(String name, double weight, double price, double transparency) { // Конструктор для створення

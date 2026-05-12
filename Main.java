@@ -13,10 +13,14 @@ public class Main {
 
         // Ініціалізація об'єктів різних класів-нащадків
         necklace.addStone(new Diamond(1.5, 4500.0, 0.98));
+        necklace.addStone(new Diamond(1.3, 4200.0, 0.95));
         necklace.addStone(new Ruby(2.1, 2800.0, 0.85));
+        necklace.addStone(new Ruby(2.0, 2500.0, 0.83));
         necklace.addStone(new Amber(12.0, 400.0, 0.35));
+        necklace.addStone(new Amber(10.0, 300.0, 0.34));
 
-        System.out.println("Початковий склад намиста");
+
+        System.out.println("Початковий склад намиста:");
         necklace.printInfo();
         // Розрахунок загальних показників
         System.out.println("\nЗагальна вага: " + necklace.calculateTotalWeight() + " к.");
@@ -32,7 +36,7 @@ public class Main {
 
         // Виводимо задані параметри пошуку
         System.out.println("\nЗаданий діапазон прозорості: " + minTransparency + " - " + maxTransparency);
-        System.out.println("Пошук каменів із заданою прозорістю");
+        System.out.println("Пошук каменів із заданою прозорістю:");
         // Шукаємо камені, прозорість яких потрапляє в обраний діапазон
         var foundStones = necklace.findByTransparencyRange(minTransparency, maxTransparency);
 
